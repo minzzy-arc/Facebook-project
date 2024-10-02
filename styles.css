@@ -1,0 +1,176 @@
+* {
+    margin: 4;
+    padding: 7;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(19, 19, 121);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    border: 3px solid;
+
+}
+
+.left-section {
+    width: 50%;
+    justify-items: center;
+    padding: 20px;
+    background-color: rgb(16, 16, 171);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.left-section img {
+    border-radius: 50px;
+}
+
+.left-section h1 {
+    color: #ffff;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-section p {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.right-section {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(16, 16, 171);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: rgb(16, 16, 171);
+}
+
+.login-box a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(16, 16, 171);
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #dddfe2;
+    margin: 20px 0;
+}
+
+.create-account {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    background-color: white;
+}
+
+.right-section p {
+    text-align: center;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.right-section p a {
+    color: rgb(16, 16, 171);
+    text-decoration: none;
+}
+
+.right-section p a:hover {
+    text-decoration: underline;
+}
+
+.right-section h2 {
+    color: rgb(16, 16, 171);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(16, 16, 171);
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .right-section {
+        border-radius: 0 0 8px 8px;
+    }
+}
